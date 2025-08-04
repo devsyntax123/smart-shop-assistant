@@ -1,4 +1,4 @@
-# 🛒 shop_recommendation_agent – Intelligent AI Shopping Recommendation Agent
+# 🛒 shop_recommendation_agent :Intelligent AI Shopping Recommendation Agent
 
 **shop_recommendation_agent** is an open-source agentic AI shopping assistant built using **LangGraph**, powered by **Tavily** for real-time web search and **DeepSeek LLM via Groq** for intelligent decision-making. It redefines the online shopping experience by performing product comparison, analysis, and personalized recommendations  all delivered straight to your inbox along with relevant **YouTube video reviews fetched automatically**.
 
