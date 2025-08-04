@@ -5,7 +5,7 @@ load_dotenv()
 
 
 if __name__ == "__main__":
-    initial_state = {"query": "Best smartphone under 30k rupees","email":"sruthi.bandiii@gmail.com"}
+    initial_state = {"query": "Best smartphone under 30k rupees","email":"sender_email@gmail.com"}
     #print(graph.invoke(input=initial_state))
     for event in graph.stream(input=initial_state,stream_mode="updates"):
         print(event)

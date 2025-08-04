@@ -8,8 +8,8 @@ def send_email(recipient_email, subject, body):
     # SMTP server configuration
     smtp_server = "smtp.gmail.com"
     smtp_port = 587
-    sender_email = "keshtya.kesh@gmail.com"
-    sender_password = "bhzj gbmj pwul ijap"
+    sender_email = "your_email@gmail.com"
+    sender_password = "your_password"
 
     try:
         # Create email content
