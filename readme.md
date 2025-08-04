@@ -44,6 +44,61 @@
 
 ---
 
+🧪 Installation & Running Instructions
+1. 📦 Install Dependencies
+bash
+Copy
+Edit
+pip install -r requirements.txt
+2. 🔐 Set Up API Keys and Email Config
+Create a .env file in your project root directory and add the following environment variables:
 
+env
+Copy
+Edit
+# Tavily API key (for web search)
+TAVILY_API_KEY=your_tavily_api_key
+
+# Groq API key (for DeepSeek LLM)
+GROQ_API_KEY=your_groq_api_key
+
+# YouTube Data API key (for fetching review videos)
+YOUTUBE_API_KEY=your_youtube_api_key
+
+# Email SMTP Configuration (Gmail recommended)
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USER=youremail@gmail.com           # Sender's Gmail address
+EMAIL_PASS=your_app_specific_password    # App-specific password
+3. ✉️ Enable Gmail SMTP (for Email Sending)
+To send emails via Gmail SMTP:
+
+Go to Google Account Security.
+
+Enable 2-Step Verification for your account.
+
+Under "Signing in to Google", click on App passwords.
+
+Generate an App Password for "Mail".
+
+Use this password as EMAIL_PASS in the .env file.
+
+4. 🧠 Set the Input Query and Receiver Email
+In main.py, update the query and the recipient’s email:
+
+python
+Copy
+Edit
+# main.py
+
+query = "best smartphones under ₹20000"              # Change this to your shopping query
+receiver_email = "receiver@example.com"              # The email address to send results to
+5. ▶️ Run the Agent
+Once everything is set:
+
+bash
+Copy
+Edit
+python main.py
 
 
